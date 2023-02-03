@@ -21,17 +21,7 @@
         
     }
    
-    #line1{
-        height:200px;
-        width:10px;
-        background:#000;
-        margin-left:30px;
-    }
-    #line2{
-        height:10px;
-        width:70px;
-        background:#000;
-    }
+   
     #green{
         background-color: green;
     }
@@ -82,24 +72,24 @@
             green.style.opacity=.3;
             red.style.opacity=.3;
             yellow.style.opacity=1;
-        },1000);
+        },10000);
  
         setTimeout(function () {
             green.style.opacity=.3;
             red.style.opacity=1;
             yellow.style.opacity=.3;
-        },1000);
+        },10000);
  
         setTimeout(function () {
             green.style.opacity=1;
             red.style.opacity=.3;
             yellow.style.opacity=.3;
-        },5000);
+        },50000);
     }
  
     var timer=setInterval(function () {
         startTrafficSignal();
-    },7000);
+    },70000);
  
     startTrafficSignal();
     </script>
