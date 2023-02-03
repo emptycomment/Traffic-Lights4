@@ -61,14 +61,18 @@
     </head>
     <body onload="timer;">
         
-    <input type="button" value = "Start" onclick="startTrafficSignal()">
-    <input type="button" value = "Stop" onclick="stop()">    
+    <input type="button" style = "background-color: green" value = "Start" onclick="startTrafficSignal()">
+     <hr>   
+    <input type="button" style = "background-color:red" value = "Stop" onclick="stop()">    
         <br>
      <script>
          function stop(){
              clearTimeout(animate);
+             animate = null;
          }
+         window.onload = init();
         </script>    
+        
     <div id="traffic-signal">
         <div id="red"></div>
         <div id="yellow"></div>
